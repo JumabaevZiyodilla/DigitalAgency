@@ -16,6 +16,7 @@
 line-height: 24px;
 }
 .footer-bottom-text{
+    margin: 0px;
     font-size: 12px;
 line-height: 190.6%;
 }
@@ -31,6 +32,8 @@ line-height: 190.6%;
     .site-footer{
         padding: 22px 0px 27px 0px;
     }
+}
+@media only screen and (min-width: 992px){
     .footer-bottom-text{
         margin-top: 29px;
     }
