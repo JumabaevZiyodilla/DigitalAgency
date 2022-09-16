@@ -1,0 +1,110 @@
+/* SECTION DEVELOPMENT START */
+.development {
+    padding: 48px 0px 101px 0px;
+}
+
+.development-box {
+    padding: 0px 17px;
+    &::after {
+        position: absolute;
+        bottom: -102px;
+        z-index: -1;
+        left: 180px;
+        width: 79px;
+        height: 62px;
+        background-image: url("../images/people-after.svg");
+        content: "";
+    }
+}
+
+.development-title {
+    margin-bottom: 66px;
+    font-size: 16px;
+    line-height: 187.5%;
+    font-weight: 600;
+    color: #222222;
+}
+.people-img-m {
+    width: 284px;
+    left: -49px;
+}
+
+.development-text-box {
+    width: 545px;
+}
+
+.development-part-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 187.5%;
+    color: #222222;
+}
+
+.development-text {
+    line-height: 187.5%;
+    color: #525252;
+}
+@media only screen and (min-width: 350px){
+    .development-box{
+        &::after{
+            left: 205px;
+        }
+    }
+    .people-img-m{
+        width: 309px;
+    }
+}
+@media only screen and (min-width: 550px){
+    .development-box{
+        &::after{
+            left: 397px;
+        }
+    }
+    .people-img-m{
+        width: 500px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .development-title-box{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .development-box{
+        &::after{
+            top: 323px;
+            left: 475px;
+            z-index: -1;
+            width: 196px;
+            height: 154px;
+            background-image: url("../images/people-d-after.svg");
+            content: "";
+        }
+    }
+    .people-img-d{
+        width: 583px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .development-box{
+        padding-left: 54px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .development-box{
+        &::after{
+            left: 474px;
+        }
+    }
+}
+@media only screen and (min-width: 1125px){
+    .development-box{
+        &::after{
+            left: 825px;
+        }
+    }
+    .people-img-d{
+        width: 934px;
+        height: 462px;
+    }
+}
+/* SECTION DEVELOPMENT END */

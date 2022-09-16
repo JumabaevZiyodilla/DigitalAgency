@@ -1,3 +1,107 @@
 /* HEADER START */
+.email-link {
+    margin-right: 100px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #1A1A1A;
+    &::before{
+        width: 10px;
+        height: 15px;
+        margin-right: 13px;
+        background-image: url("../images/location.svg");
+        content: "";
+    }
+}
+.header-address{
+    margin-bottom: 0px !important;
+}
+.tel-link {
+    font-size: 10px;
+    line-height: 15px;
+    color: #1A1A1A;
+    &::before{
+        width: 15px;
+        height: 15px;
+        margin-right: 6px;
+        background-image: url("../images/phone.svg");
+        content: "";
+    }
+}
+
+.site-header {
+    background-image: linear-gradient(90.05deg, #E47500 -5.66%, #DF7C14 115.63%);
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-btn {
+    border: none;
+    padding: 0px;
+    width: 26px;
+    height: 21px;
+    background-image: url("../images/hamburg.svg");
+    background-repeat: no-repeat;
+}
+
+.nav-contact-btn {
+    display: none;
+    padding: 10px 27px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #dc7000;
+    border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-wrap {
+        display: flex;
+    }
+
+    .logo-link {
+        display: inline-block;
+        margin-right: auto !important;
+    }
+
+    .nav-item {
+        &:nth-child(1) {
+            margin-right: 87px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 75px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 64px;
+        }
+
+        &:nth-child(4) {
+            margin-right: 69px;
+        }
+    }
+
+    .nav-contact-btn {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 790px) {
+    .nav-item--active {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 7px;
+            left: -16px;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: #fff;
+            content: "";
+        }
+    }
+}
 
 /* HEADER END */

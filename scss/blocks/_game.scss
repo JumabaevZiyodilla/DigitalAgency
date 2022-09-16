@@ -1,0 +1,90 @@
+.game {
+    padding: 181px 0px 0px 0px;
+}
+
+.game-box {
+    margin-bottom: 206px;
+    padding: 0px 7px;
+}
+
+.game-title {
+    font-size: 20px;
+    line-height: 187.5%;
+    font-weight: 600;
+}
+
+.game-text {
+    font-size: 12px;
+    line-height: 187.5%;
+    color: #525252;
+}
+
+.game-item {
+    margin-bottom: 205px;
+    &::before {
+        position: absolute;
+        top: -95px;
+        left: calc(50% + -35px);
+        width: 65px;
+        height: 65px;
+        background-image: url("../images/mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+    }
+    &:nth-child(2)::before{
+        background-image: url("../images/pc.svg");
+        background-repeat: no-repeat;
+    }
+    &:nth-child(3)::before{
+        background-image: url("../../images/ps4.svg");
+        background-repeat: no-repeat;
+    }
+    &:nth-child(4)::before{
+        background-image: url("../images/ar.svg");
+        background-repeat: no-repeat;
+    }
+    &:nth-child(5)::before{
+        background-image: url("../images/vr.svg");
+        background-repeat: no-repeat;
+    }
+    &:nth-child(6)::before{
+        background-image: url("../images/3d.svg");
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -25px;
+        left: calc(50% + -10px);
+        width: 21px;
+        height: 18px;
+        background-image: url("../images/arrow.svg");
+        content: "";
+    }
+    
+}
+
+.game-part-title {
+    line-height: 187.5%;
+}
+
+@media only screen and (min-width: 768px) {
+    .game {
+        padding-top: 0px;
+    }
+
+    .game-title {
+        font-size: 32px;
+    }
+
+    .game-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .game-box {
+        width: 826px;
+    }
+}

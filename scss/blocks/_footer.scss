@@ -1,3 +1,38 @@
 /* FOOTER START */
-
+.site-footer{
+    padding: 66px 0px 29px 0px;
+}
+.footer-top{
+    border-bottom: 1px solid #d2d2d2;
+}
+.footer-text{
+    margin-bottom: 25px;
+}
+.icon-list{
+    width: 216px !important;
+}
+.footer-link{
+    font-size: 16px;
+line-height: 24px;
+}
+.footer-bottom-text{
+    font-size: 12px;
+line-height: 190.6%;
+}
+@media only screen and (min-width: 992px){
+    .footer-box{
+        padding: 0px 20px;
+    }
+    .icon-list{
+        margin-top: 130px !important;
+    }
+}
+@media only screen and (max-width: 992px){
+    .site-footer{
+        padding: 22px 0px 27px 0px;
+    }
+    .footer-bottom-text{
+        margin-top: 29px;
+    }
+}
 /* FOOTER END */
